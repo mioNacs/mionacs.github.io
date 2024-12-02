@@ -30,8 +30,8 @@ body {
 
 /* Heading Styling */
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* Adjusted for better responsiveness */
+    margin-bottom: 15px;
     font-weight: 700;
     color: #ffffff;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -49,7 +49,7 @@ p {
 .portfolio-link {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Slightly smaller for better fit on mobile */
     font-weight: 700;
     color: #ffffff;
     background: linear-gradient(135deg, #0078ff, #00c6ff);
@@ -69,4 +69,47 @@ p {
 .portfolio-link:active {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Added padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjust paragraph font size for smaller screens */
+    }
+
+    .portfolio-link {
+        padding: 12px 25px; /* Adjust button padding for smaller screens */
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 95%; /* Expand container to use more screen space on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Further adjust heading size for very small screens */
+    }
+
+    p {
+        font-size: 0.85rem; /* Slightly smaller font size for narrow screens */
+    }
+
+    .portfolio-link {
+        padding: 10px 20px; /* Compact button size for narrow screens */
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 30px 15px; /* Reduce container padding for very narrow screens */
+    }
 }
